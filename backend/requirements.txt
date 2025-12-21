@@ -1,0 +1,5 @@
+fastapi[standard]
+pydantic
+uvicorn[standard]
+python-jose[cryptography]
+pwdlib[argon2]

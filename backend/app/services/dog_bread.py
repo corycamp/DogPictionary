@@ -14,7 +14,8 @@ class DogBreedService:
                 raise ValueError("API key or URL is missing")
             # Simulate API call and data retrieval
             try:
-                self.results = await requests.get(url, headers={"X-API-KEY": key}).json()
+                print("Fetching dog breeds from external API...")
+                self.results = requests.get(url, headers={"X-API-KEY": key}).json()
             except requests.RequestException as e:
                 raise ValueError("Failed to retrieve dog breeds") from e
         return self.results

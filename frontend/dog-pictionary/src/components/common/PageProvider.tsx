@@ -3,9 +3,9 @@ import React from "react";
 
 const PageProvider = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div>
+    <div className="pageProvider">
       <NavBar />
-      {children}
+      <main>{children}</main>
     </div>
   );
 };

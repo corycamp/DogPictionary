@@ -1,4 +1,3 @@
-import "./App.css";
 import PageProvider from "./components/common/PageProvider";
 import Landing from "./pages/Landing";
 

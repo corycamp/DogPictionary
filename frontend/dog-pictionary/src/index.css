@@ -6,7 +6,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #f4af25;
+  background-color: #fdedcd;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,26 +14,111 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  align-items: center;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  /* padding: 0.5rem; */
 }
-a:hover {
-  color: #535bf2;
+
+.nav{
+  color:black;
+  width: 450px;
+  font-weight: 500;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav .a{
+  cursor: pointer;
+}
+
+.nav .btn-primary{
+  background-color: var(--color-amber-400);
+  text-align: center;
+  align-items: center;
+  border-radius: 999px;
+  height: 2.8rem;
+  box-shadow: gray 2px 3px 7px;
+}
+
+.pageProvider {
+  width: 100%;
+}
+
+.pageProvider main{
+
 }
 
 body {
-  margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-flow: column;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+.landingPage{
+  display: flex;
+  flex-flow: column;
+}
+
+.landingPage .HeroContainer{
+  display: flex;
+  flex-flow: row;
+  background-color: white;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.landingPage .Intro-Section{
+  flex-flow: column;
+  width:50%;
+}
+
+.landingPage .Intro-Section .Into-Buttons button{
+  margin-top: 30px;
+  border-radius: 999px;
+}
+
+.landingPage .Intro-Section .Into-Buttons{
+  display: flex;
+  flex-flow: row;
+}
+
+.Into-Buttons .Start-btn
+{
+  background-color: var(--color-amber-400);
+}
+
+.Into-Buttons .Demo-btn
+{
+  margin-left: 20px;
+  background-color: white;
+}
+
+.landingPage .DogPhoto-Section{
+  flex-flow: row;
+  justify-items: center;
+  align-items: center;
+  width:100%;
+}
+
+.HeroContainer .DogPhoto-Section .DogImage{
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBxD-zZdhd3LP_24BDQqEFRt46BuVinYFf0iVTrOnXtAehAJN__ITkycVJMCfy3TcRcwIuk5Y-AwkEPcMCd24z2WoK3k2f33vwXzPTrLXpoCvIzJVT5nVv_A_MjgJGwdbXV_M9uXjbJJWFrJgwotCkAfo0IjPnGk1vGixK4888j1u3v1asEB58caIe4_cnWxuDjctDpA-erya2YbMkdXkDe_UKxV4UPRteGTXTPzuKoXnXXzT7GQYwl4ce1jCu6RQN0XwvkmtMnAKyL");
 }
 
 button {
@@ -47,9 +132,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

@@ -25,10 +25,10 @@ header {
   padding-left: 4rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  /* padding: 0.5rem; */
+  border-bottom: 0.5px solid gainsboro;
 }
 
-.nav{
+.desktopNav{
   color:black;
   width: 450px;
   font-weight: 500;
@@ -38,11 +38,11 @@ header {
   justify-content: space-between;
 }
 
-.nav .a{
+.desktopNav .a{
   cursor: pointer;
 }
 
-.nav .btn-primary{
+.desktopNav .btn-primary{
   background-color: var(--color-amber-400);
   text-align: center;
   align-items: center;
@@ -108,6 +108,7 @@ h1 {
 {
   margin-left: 20px;
   background-color: white;
+  border: solid;
 }
 
 .landingPage .DogPhoto-Section{
@@ -148,5 +149,29 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (width <= 48rem) 
+{
+  header{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  header .desktopNav{
+    display: none;
+  }
+
+  .landingPage .HeroContainer{
+    flex-flow: column-reverse;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+  }
+
+  .landingPage .Intro-Section{
+    width:100%;
+    margin-top: 4rem;
   }
 }

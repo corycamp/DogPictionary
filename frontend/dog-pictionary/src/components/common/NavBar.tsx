@@ -13,7 +13,7 @@ const NavBar = () => {
           </h2>
         </div>
       </div>
-      <nav className="nav">
+      <nav className="desktopNav">
         <a href="#">How to Play</a>
         <a href="#">Leaderboard</a>
         <a href="#">Sign In</a>

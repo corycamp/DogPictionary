@@ -17,7 +17,7 @@ export default function Hero() {
             <h1 className="text-yellow-400 font-bold underline mb-6">
               Dog Expert
             </h1>
-            <h3 className="text-amber-900 font-medium w-100">
+            <h3 className="text-amber-900 font-medium lg:w-100">
               Identify the breed from the picture and simply type the name. No
               drawing required-just test your dog knowledge and have fun!
             </h3>
@@ -29,19 +29,19 @@ export default function Hero() {
                 play_arrow
               </span>
             </button>
-            <button className="Demo-btn bg-amber-400 text-black">Demo</button>
+            <button className="Demo-btn bg-amber-400 text-black border">Demo</button>
           </div>
         </div>
       </div>
       <div className="DogPhoto-Section">
-        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end relative">
+        <div className="w-full md:min-w-1/2 md:max-w-3/4 flex justify-center lg:justify-end relative">
           <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-primary/10 rounded-full blur-3xl"></div>
           <div className="relative w-full aspect-square rounded-xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
             <div
               className="DogImage w-full h-full bg-cover bg-center"
               data-alt="Cute illustration or photo of a dog painting on a canvas with colorful paw prints"
             ></div>
-            <div className="absolute bottom-6 left-6 bg-white dark:bg-[#3a352a] p-4 rounded-lg shadow-lg animate-bounce">
+            <div className="absolute bottom-1 left-6 bg-white dark:bg-[#3a352a] p-4 rounded-lg shadow-lg animate-bounce">
               <div className="flex items-center gap-2 mb-2">
                 <span className="material-symbols-outlined text-primary text-xl">
                   image
@@ -54,7 +54,7 @@ export default function Hero() {
                 Golden Retriever
               </p>
             </div>
-            <div className="absolute top-6 right-6 bg-white dark:bg-[#3a352a] p-3 rounded-lg shadow-lg flex items-center gap-3">
+            <div className="absolute top-0 md:top-6 right-0 lg:right-6 bg-white dark:bg-[#3a352a] p-3 rounded-lg shadow-lg flex items-center gap-3">
               <div className="size-8 rounded-full bg-green-100 flex items-center justify-center text-green-600">
                 <span className="material-symbols-outlined text-lg">check</span>
               </div>

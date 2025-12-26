@@ -4,7 +4,9 @@ export default function Footer() {
       <span className="divider"></span>
       <div>
         <div>
-          <span></span>
+          <span className="material-symbols-outlined text-2xl text-gray-400">
+            pets
+          </span>
           <h2>Dog Pictionary</h2>
         </div>
         <div>

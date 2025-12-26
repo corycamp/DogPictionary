@@ -77,16 +77,16 @@ h1 {
 .landingPage .HeroContainer{
   display: flex;
   flex-flow: row;
-  /* background-color: white; */
-  padding-right: 4rem;
-  padding-left: 4rem;
-  padding-top: 4rem;
+  background-color:white;
+  padding-right: 25%;
+  padding-left: 25%;
+  padding-top: 7rem;
   padding-bottom: 4rem;
 }
 
 .landingPage .Intro-Section{
   flex-flow: column;
-  width:50%;
+  width:65%;
 }
 
 .landingPage .Intro-Section .Into-Buttons button{
@@ -108,7 +108,7 @@ h1 {
 {
   margin-left: 20px;
   background-color: white;
-  border: 0.5px solid;
+  border: 1px solid gray;
 }
 
 .landingPage .DogPhoto-Section{
@@ -128,7 +128,10 @@ h1 {
   width: 100%;
   background-color: white;
   color:black;
-  padding: 4rem;
+  padding-top: 4rem;
+  padding-right: 25%;
+  padding-left: 25%;
+  padding-bottom: 4rem;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
 }
@@ -152,7 +155,7 @@ h1 {
 }
 
 .landingPage .ExplanationContainer .TileSection .ItemCard{
-  background-color: lightgray;
+  background-color: var(--color-gray-100);
   width: 32%;
   height: auto;
   padding: 2rem;
@@ -168,6 +171,13 @@ h1 {
   font-size: 28px;
   text-align: center;
   margin-top: 10px;
+}
+
+.landingPage .HowItWorks{
+  padding-right: 25%;
+  padding-left: 25%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 button {
@@ -221,4 +231,33 @@ button:focus-visible {
     width:100%;
     margin-top: 4rem;
   }
+  
+  .landingPage .HowItWorks{
+    display: flex;
+    flex-flow: column;
+}
+
+}
+
+@media (width <= 80rem){
+  .landingPage .HeroContainer{
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  .landingPage .HowItWorks{
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.landingPage .ExplanationContainer .TileSection{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.landingPage .ExplanationContainer .TileSection .ItemCard{
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
 }

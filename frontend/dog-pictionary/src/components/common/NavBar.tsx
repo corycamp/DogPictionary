@@ -8,7 +8,7 @@ const NavBar = () => {
               pets
             </span>
           </div>
-          <h2 className="text-xl font-semibold leading-tight tracking-[-0.015em] text-black">
+          <h2 className="text-xl font-bold leading-tight tracking-[-0.015em] text-black">
             Dog Pictionary
           </h2>
         </div>

@@ -26,7 +26,7 @@ export default function Hero() {
               </h3>
             </div>
             <div className="Into-Buttons">
-              <button className="Start-btn flex w-full sm:w-auto cursor-pointer items-center justify-center rounded-full h-14 px-8 bg-primary hover:bg-primary/90 text-[#181611] text-lg font-extrabold shadow-lg hover:shadow-primary/40 hover:transition-all duration-300 group">
+              <button className="Start-btn flex w-full sm:w-auto cursor-pointer items-center justify-center rounded-full h-14 px-8 bg-primary hover:bg-primary/90 text-[#181611] text-lg font-extrabold shadow-lg hover:shadow-primary/40 hover:-translate-y-1 transition-all duration-300 group">
                 Start Guessing{" "}
                 <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform text-black">
                   play_arrow

@@ -78,7 +78,9 @@ export default function HowItWorks() {
               Join the community and become a top dog expert today!
             </p>
           </div>
-          <button className="h-12 rounded-4xl mt-10 lg:mt-0">Play Now</button>
+          <button className="h-12 rounded-4xl mt-10 lg:mt-0 bg-black">
+            Play Now
+          </button>
         </div>
       </div>
     </section>
